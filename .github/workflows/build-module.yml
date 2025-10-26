@@ -14,15 +14,15 @@ on:
       version:
         description: 'OpenWRT version (e.g., 24.10.3)'
         required: true
-        type: string
+        type: 24.10.4
       targets:
         description: 'Targets (comma-separated, e.g., "stm32,ramips")'
         required: true
-        type: string
+        type: ramips
       subtargets:
         description: 'Subtargets (comma-separated, e.g., "stm32mp1,mt7621")'
         required: true
-        type: string
+        type: mt7621
 
 jobs:
   generate-config:
